@@ -15,12 +15,17 @@ namespace site_igreja_core_mvc.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(true);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Sobre()
         {
-            return View();
+            return View(false);
+        }
+
+        public IActionResult Contactos()
+        {
+            return View(false);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
